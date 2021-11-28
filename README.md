@@ -1,4 +1,4 @@
 # app-skeleton
 
-![](./images/1.png)
+<img src="./images/1.png" width="375px">
 
