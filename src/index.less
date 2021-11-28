@@ -1,0 +1,62 @@
+
+@s-color: rgba(200, 200, 200, .15);
+
+.app {
+  padding: 20px;
+  &__header {
+    height: 50px;
+    display: flex;
+  }
+  &__scan {
+    width: 30px;
+    height: 30px;
+  }
+  &__search {
+    margin-left: 10px;
+    flex: 1;
+    width: 0;
+    height: 30px;
+  }
+  // 横幅
+  &__banner {
+    height: 120px;
+  }
+  // 底部栏
+  &__navbar {
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    > div {
+      width: 40px;
+      text-align: center;
+    }
+    &__icon {
+      height: 25px;
+    }
+    &__label {
+      display: inline-block;
+      margin-top: 5px;
+      width: 85%;
+      height: 10px;
+    }
+  }
+}
+
+.skeleton {
+  min-height: 10px;
+  background-color: @s-color;
+  border-radius: 5px;
+  &--ring {
+    border-radius: 9999px;
+  }
+  &--round {
+    border-radius: 5px;
+  }
+}
